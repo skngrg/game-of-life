@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Game of Life</title>
+	<script defer src="js/game-of-life.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="container">
+		<canvas id="canvas"></canvas>
+		<div class="stats">
+			<label id="game-state" for="">Game State: Creating Initial Pattern</label>&nbsp;|
+			<label id="alive-cells" for="">Alive Cells: 0</label>&nbsp;|
+			<label id="gen" for="">Generation: 0</label>
+		</div>
+		<div class="controls">
+			<button id="new-game" class="btn" onclick="init()">New</button>
+			<button id="next-gen" class="btn" onclick="nextGen()">Next Gen</button>
+			<button id="random-cells" class="btn" onclick="drawRandomCells()">Random Cells</button>
+			<button id="play-pause" class="btn" onclick="playpause()">Play</button>
+		</div>
+	</div>
+</body>
+</html>
